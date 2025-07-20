@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos de conducción - CEA</title>
+    <link rel="stylesheet" href="/static/css/style_cursos.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('routes.index') }}" class="logo">
+            <img src="/static/img/logo.png" alt="Logo Academia de Conducir">
+        </a>
+        <h1>CEA</h1>
+        <nav>
+            <a href="{{ url_for('routes.login') }}">Iniciar Sesión</a>
+            <a href="{{ url_for('routes.contactanos') }}">Contáctanos</a>
+        </nav>
+    </header>
+
+    <main class="courses-section">
+        <h2>Nuestros Cursos de Conducción</h2>
+        <p class="intro">Elige el curso que se adapte a tus necesidades. Todos incluyen clases teóricas, prácticas y exámenes.</p>
+
+        <div class="course-list">
+
+            <div class="course-card">
+                <img src="/static/img/curso_moto.jpg" alt="Curso A2 - Moto">
+                <h3>Licencia A2 - Motocicletas</h3>
+                <p>Ideal para motos de más de 125cc. Incluye maniobras avanzadas, seguridad vial y conducción defensiva.</p>
+                <ul>
+                    <li><strong>Duración:</strong> 30 horas</li>
+                    <li><strong>Incluye:</strong> Examen teórico y práctico</li>
+                    <li><strong>Valor:</strong> $550.000 COP</li>
+                </ul>
+                <a href="{{ url_for('routes.login') }}" class="btn">Inscribirme</a>
+            </div>
+
+            <div class="course-card">
+                <img src="/static/img/curso_carro.jpg" alt="Curso B1 - Carro particular">
+                <h3>Licencia B1 - Vehículo Particular</h3>
+                <p>Curso completo para manejar automóviles particulares. Aprende desde cero con instructores certificados.</p>
+                <ul>
+                    <li><strong>Duración:</strong> 40 horas</li>
+                    <li><strong>Incluye:</strong> Simulador, clases en calle, exámenes</li>
+                    <li><strong>Valor:</strong> $780.000 COP</li>
+                </ul>
+                <a href="{{ url_for('routes.login') }}" class="btn">Inscribirme</a>
+            </div>
+
+            <div class="course-card">
+                <img src="/static/img/curso_carga.jpg" alt="Curso C1 - Vehículo de carga liviana">
+                <h3>Licencia C1 - Vehículo de Carga</h3>
+                <p>Formación profesional para conducir camiones livianos, pickups, vans y otros vehículos de carga.</p>
+                <ul>
+                    <li><strong>Duración:</strong> 50 horas</li>
+                    <li><strong>Incluye:</strong> Prácticas en pista, teórico y prueba en tráfico</li>
+                    <li><strong>Valor:</strong> $950.000 COP</li>
+                </ul>
+                <a href="{{ url_for('routes.login') }}" class="btn">Inscribirme</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p> La mejor experiencia! siguenos en nuestras redes</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>&copy; 2024 Academia de conducir       |            Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

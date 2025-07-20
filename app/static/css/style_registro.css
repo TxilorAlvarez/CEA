@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(2, 17, 112, 0.941);
+}
+
+.main-header .logo img {
+    height: 80px;
+    border-radius: 150px;
+}
+
+.nav-links a {
+    color: #f5f3f3;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+.registro-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 30px; /* espacio por el header */
+}
+
+.registro-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.registro-card h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #0a3d62;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #1e5fa3;
+}
+
+.social-register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-register a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-google {
+    background: #db4437;
+}
+
+.btn-facebook {
+    background: #3b5998;
+}
+
+.btn-google:hover {
+    background: #c23321;
+}
+
+.btn-facebook:hover {
+    background: #2d4373;
+}

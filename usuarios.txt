@@ -1,0 +1,36 @@
+Crear entorno virtual: python -m venv venv
+Activar el entorno virtual: venv\Scripts\activate
+Desactivar: deactivate
+Instalar dependencias: pip install -r requirements.txt
+Correr la paginaWeb: python run.py
+
+
+
+Primer Usuario
+primerusuario123@gmail.com
+primerusuario123@
+
+
+Ingresar a la base de datos: flask shell
+
+Agregar administrador: 
+
+from app.extensions import db
+from app.models import Usuario
+from werkzeug.security import generate_password_hash
+
+admin = Usuario(
+    nombre_usuario='admin',
+    email='admin@escuela.com',
+    identificacion='0001',
+    password_hash=generate_password_hash('admin123'),
+    rol='administrador'
+)
+
+db.session.add(admin)
+db.session.commit()
+
+
+primerasesor@cea.com
+asesor123@
+

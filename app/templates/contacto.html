@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contáctanos - CEA</title>
+    <link rel="stylesheet" href="/static/css/style_contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('/') }}" class="logo">
+            <img src="/static/img/logo.png" alt="Logo Academia de Conducir">
+        </a>
+        <h1>CEA</h1>
+        <nav>
+            <a href="{{ url_for('routes.login') }}">Iniciar Sesión</a>
+            <a href="{{ url_for('routes.cursos') }}">Cursos</a>
+        </nav>
+    </header>
+
+    <main class="contact-section">
+        <h2>¿Necesitas ayuda? Estamos para ti.</h2>
+        <p class="intro">Nuestro equipo estará encantado de atenderte. Puedes contactarnos por los siguientes medios:</p>
+
+        <div class="contact-cards">
+            <div class="card">
+                <i class="fas fa-envelope"></i>
+                <h3>Correo Electrónico</h3>
+                <p>info@ceaacademia.com</p>
+                <p>soporte@ceaacademia.com</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p>+57 301 234 5678</p>
+                <a href="https://wa.me/573012345678" target="_blank">Enviar mensaje</a>
+            </div>
+            <div class="card">
+                <i class="fab fa-telegram"></i>
+                <h3>Telegram</h3>
+                <p>@cea_soporte</p>
+                <a href="https://t.me/cea_soporte" target="_blank">Contáctanos</a>
+            </div>
+        </div>
+
+        <div class="address-section">
+            <h3>Nuestra sede principal</h3>
+            <p>Cra 45 # 32-16, Bogotá D.C., Colombia</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.827542849067!2d-74.08221868523859!3d4.648283696627922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a3468f91c45%3A0xf20bb3f33d4dbd11!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1678312345678" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <blockquote class="cortesia">
+            “Tu camino hacia una conducción segura comienza aquí. Gracias por confiar en nosotros.”
+        </blockquote>
+    </main>
+
+    <footer>
+        <p> La mejor experiencia! siguenos en nuestras redes</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>&copy; 2024 Academia de conducir       |            Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

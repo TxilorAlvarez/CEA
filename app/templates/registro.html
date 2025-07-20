@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_registro.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="{{ url_for('routes.index') }}" class="logo">
+            <img src="/static/img/logo.png" alt="Logo">
+        </a>
+        <nav class="nav-links">
+            <a href="{{ url_for('routes.cursos') }}">Cursos</a>
+            <a href="{{ url_for('routes.contactanos') }}">Contáctanos</a>
+        </nav>
+    </header>
+
+    <main class="registro-main">
+        <section class="registro-card">
+            <h2>Crear Cuenta</h2>
+            <form method="POST" action="{{ url_for('routes.registro') }}">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.nombre_usuario.label }}<br>
+                    {{ form.nombre_usuario(class="input-field") }}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label }}<br>
+                    {{ form.email(class="input-field") }}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label }}<br>
+                    {{ form.password(class="input-field") }}
+                </div>
+                <div class="form-group">
+                    {{ form.confirmar_password.label }}<br>
+                    {{ form.confirmar_password(class="input-field") }}
+                </div>
+                <div class="form-group">
+                    {{ form.rol.label }}<br>
+                    {{ form.rol(class="input-field") }}
+                </div>
+                <div class="form-group">
+                    {{ form.submit(class="submit-btn") }}
+                </div>
+            </form>
+            
+            <p>¿Ya tienes cuenta? <a href="{{ url_for('routes.login') }}">Inicia sesión aquí</a>.</p>
+
+
+            <div class="social-register">
+                <p>O regístrate con:</p>
+                <a href="#" class="btn-google"><i class="fab fa-google"></i> Google</a>
+                <a href="#" class="btn-facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+        <p> La mejor experiencia! siguenos en nuestras redes</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>&copy; 2024 Academia de conducir       |            Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</html>

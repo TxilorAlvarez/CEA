@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/static/css/style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('routes.index') }}" class="logo">
+            <img src="/static/img/logo.png" alt="Logo Academia de Conducir">
+        </a>
+        <h1>CEA </h1>
+        <nav>
+            <a href="{{ url_for('routes.contactanos') }}">Contáctanos</a>
+            <a href="{{ url_for('routes.cursos') }}">Cursos</a>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h2>Iniciar Sesión</h2>
+        <form method="POST" action="{{ url_for('routes.login') }}">
+            {{ form.hidden_tag() }}
+            <div>
+                {{ form.email.label }}<br>
+                {{ form.email(size=32) }}<br>
+            </div>
+            <div>
+                {{ form.password.label }}<br>
+                {{ form.password(size=32) }}<br>
+            </div>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+        
+        <a href="{{ url_for('routes.registro') }}">Crear una cuenta</a>
+    </div>
+    <footer>
+        <p> La mejor experiencia! siguenos en nuestras redes</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>&copy; 2024 Academia de conducir | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

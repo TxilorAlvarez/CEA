@@ -1,0 +1,19 @@
+{% extends 'dashboard_admin.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Gestión de Usuarios</h2>
+    <div class="button-container">
+        <div class="button-wrapper">
+            <a href="{{ url_for('routes.agregar_asesor') }}" class="btn btn-success btn-lg w-100">
+                Crear Asesor
+            </a>
+        </div>
+        <div class="button-wrapper">
+            <a href="{{ url_for('routes.agregar_instructor') }}" class="btn btn-primary btn-lg w-100">
+                Crear Instructor
+            </a>
+        </div>
+    </div>
+</div>   
+</div>{% endblock %}

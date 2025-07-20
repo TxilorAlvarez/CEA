@@ -1,0 +1,151 @@
+### 1. agregar_instructor.html
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Agregar Instructor</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.nombre_usuario.label }}
+            {{ form.nombre_usuario(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.email.label }}
+            {{ form.email(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.identificacion.label }}
+            {{ form.identificacion(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.password.label }}
+            {{ form.password(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+### 2. agregar_asesor.html
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Agregar Asesor</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.nombre_usuario.label }}
+            {{ form.nombre_usuario(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.email.label }}
+            {{ form.email(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.identificacion.label }}
+            {{ form.identificacion(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.password.label }}
+            {{ form.password(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-success") }}
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+### 3. registrar_matricula.html
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Registrar Matrícula</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.nombre_usuario.label }}
+            {{ form.nombre_usuario(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.email.label }}
+            {{ form.email(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.identificacion.label }}
+            {{ form.identificacion(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.curso_principal.label }}
+            {{ form.curso_principal(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.curso_secundario.label }}
+            {{ form.curso_secundario(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.valor_abonado.label }}
+            {{ form.valor_abonado(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.saldo_pendiente.label }}
+            {{ form.saldo_pendiente(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-info") }}
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+### 4. agregar_vehiculo.html
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Agregar Vehículo</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.numero_placa.label }}
+            {{ form.numero_placa(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.tipo_vehiculo.label }}
+            {{ form.tipo_vehiculo(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.licencia_transito.label }}
+            {{ form.licencia_transito(class="form-control-file") }}
+        </div>
+        <div class="form-group">
+            {{ form.soat.label }}
+            {{ form.soat(class="form-control-file") }}
+        </div>
+        <div class="form-group">
+            {{ form.vigencia_soat.label }}
+            {{ form.vigencia_soat(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.tecnicomecanica.label }}
+            {{ form.tecnicomecanica(class="form-control-file") }}
+        </div>
+        <div class="form-group">
+            {{ form.vigencia_tecnicomecanica.label }}
+            {{ form.vigencia_tecnicomecanica(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.fotografia.label }}
+            {{ form.fotografia(class="form-control-file") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+{% endblock %}
