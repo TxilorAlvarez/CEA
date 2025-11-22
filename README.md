@@ -139,22 +139,22 @@ Sistema modular basado en plantillas (base.html, componentes, bloques)
 ---
 
 # 🧪 Instalación y Configuración
-1. **Clonar el repositorio**:
+#### 1️⃣**Clonar el repositorio**:
 bash
    git clone https://github.com/TxilorAlvarez/CEA/driving-school-platform.git
    cd driving-school-platform
    git clone https://github.com/TxilorAlvarez/CEA/driving-school-platform.git
    cd driving-school-platform
 
-## 2️⃣ Crear entorno virtual
+#### 2️⃣ **Crear entorno virtual**
 python -m venv venv
 source venv/bin/activate   # Linux / MacOS
 venv\Scripts\activate      # Windows
 
-## 3️⃣ Instalar dependencias
+#### 3️⃣ **Instalar dependencias**
 pip install -r requirements.txt
 
-## 4️⃣ Ejecutar el servidor
+#### 4️⃣ **Ejecutar el servidor**
 flask run
 
 
@@ -176,5 +176,6 @@ Módulo avanzado de reportes y estadísticas
 
 ¡Las contribuciones son bienvenidas!
 Realiza un fork, crea tu rama de mejoras y abre un pull request.
+
 
 
