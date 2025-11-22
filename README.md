@@ -1,48 +1,60 @@
-﻿# CEA (sgac)
-# 🚗 Sistema de Gestión de Acceso a Cursos
+# 🚗 CEA (SGAC)
+## Sistema de Gestión de Acceso a Cursos
 Plataforma Integral para Escuelas de Conducción
 
-📌 Descripción General
+# 📌 Descripción General
 
 CEA es un sistema de gestión web diseñado para optimizar la administración de una escuela de conducción.
 Permite controlar roles de usuario, gestionar inscripciones a cursos, registrar instructores y asesores, y mantener un control completo de documentos y vehículos.
 
-Su arquitectura prioriza la seguridad, accesibilidad, escalabilidad y una experiencia de uso intuitiva para administradores y personal autorizado.
+### El sistema prioriza:
 
-🛠️ Tecnologías Utilizadas
+## 🔒 Seguridad
+
+## ⚙️ Escalabilidad
+
+## 🌐 Accesibilidad
+
+## 🧩 Facilidad de uso para administradores
+
+# 🛠️ Tecnologías Utilizadas
 Categoría	Tecnología
 Lenguaje	Python 3.x
 Framework Web	Flask (Jinja2 Templates)
 ORM	SQLAlchemy
-Frontend	HTML5 · CSS3 · Bootstrap · JavaScript
+Frontend	HTML5 · CSS3 · Bootstrap · JS
 Base de Datos	SQLite (migrable a PostgreSQL/MySQL)
 Autenticación	Flask-Login
-Formularios	Flask-WTF (CSRF enabled)
-Subida de Archivos	WTForms — manejo seguro
-🎯 Objetivo del Sistema
+Formularios	Flask-WTF (con CSRF)
+Archivos	WTForms (manejo seguro)
 
-El sistema busca resolver los principales problemas que enfrentan las escuelas de conducción pequeñas y medianas, tales como:
+## 🎯 Objetivo del Sistema
+
+### CEA busca resolver problemas comunes en escuelas de conducción:
 
 ✔ Falta de un flujo digital unificado
+
 ✔ Ausencia de control de acceso por roles
-✔ Procesos manuales para registro y seguimiento de estudiantes
-✔ Gestión poco organizada de documentos y flota vehicular
 
-CEA permite:
+✔ Procesos manuales de registro y seguimiento
 
-Digitalizar el proceso de inscripción y gestión de pagos.
+✔ Gestión deficiente de documentos y vehículos
 
-Asignar roles como Instructor o Asesor.
+### Con CEA podrás:
 
-Registrar y consultar documentos vehiculares (SOAT, técnico-mecánica, licencias, etc.).
+Digitalizar el proceso de matrícula y pagos
 
-Mantener un historial de estudiantes, pagos y saldos.
+Asignar roles como Instructor o Asesor
 
-🔐 Control de Acceso y Roles
+Gestionar documentos vehiculares (SOAT, RTM, licencias, etc.)
 
-CEA implementa un sistema de permisos seguro y estructurado:
+Mantener historiales completos de estudiantes y saldos
 
-🛡️ Panel de Administrador
+# 🔐 Control de Acceso y Roles
+
+CEA implementa un sistema seguro basado en permisos:
+
+## 🛡️ Panel de Administrador
 
 Registro de instructores y asesores
 
@@ -52,26 +64,30 @@ Administración de vehículos y documentos
 
 Subida de imágenes y archivos asociados
 
-👨‍🏫 Panel de Instructor (Próximamente)
+## 👨‍🏫 Panel de Instructor (Próximamente)
 
 Consulta de estudiantes asignados
 
-Acceso a recursos académicos
+Acceso a materiales académicos
 
-👨‍💼 Panel de Asesor (Próximamente)
+## 👨‍💼 Panel de Asesor (Próximamente)
 
 Registro de estudiantes
 
 Control de pagos e historial financiero
 
-La autenticación se realiza con Flask-Login, y las contraseñas se cifran con Werkzeug.
+#### Seguridad implementada con:
+
+# 🔐 Flask-Login
+
+🔑 Werkzeug (hash seguro de contraseñas)
 
 📚 Funcionalidades Principales
 ✅ Gestión de Usuarios
 
-Creación y autenticación con roles
+#### Registro y autenticación con roles
 
-Validación de correo e identificación únicos
+#### Validación única de correo e identificación
 
 📘 Matrículas e Inscripciones
 
@@ -79,58 +95,60 @@ Registro de estudiantes
 
 Selección de curso
 
-Control de abonos y saldo pendiente
+Control de abonos y saldos pendientes
 
 🚗 Gestión de Vehículos
 
-Carga y almacenamiento de documentos
+Carga de documentos del vehículo
 
-Seguimiento de vencimientos (SOAT, revisión técnico-mecánica, etc.)
+Control de vencimientos (SOAT, RTM, etc.)
 
 📄 Manejo de Documentos
 
-Subida de PDFs e imágenes
+Subida de PDF e imágenes
 
-Acceso interno desde los paneles correspondientes
+Acceso desde los paneles internos
 
 💡 Accesibilidad y Diseño
 
-Interfaz limpia y adaptable gracias a Bootstrap
+UI limpia creada con Bootstrap
 
-Formularios amigables y enfocados en UX
+Formularios intuitivos y centrados en UX
 
-Diseño responsivo optimizado para móviles
+Vista optimizada para dispositivos móviles
 
-Estructura modular basada en plantillas Flask (base.html, componentes, bloques, etc.)
+Sistema modular basado en plantillas (base.html, componentes, bloques)
 
-🧪 Instalación y Configuración
-1️⃣ Clonar el repositorio
-git clone https://github.com/yourusername/driving-school-platform.git
+# 🧪 Instalación y Configuración
+1. **Clonar el repositorio**:
+bash
+   git clone https://github.com/TxilorAlvarez/CEA/driving-school-platform.git
+   cd driving-school-platform
+git clone https://github.com/TxilorAlvarez/CEA/driving-school-platform.git
 cd driving-school-platform
 
-2️⃣ Crear entorno virtual
+## 2️⃣ Crear entorno virtual
 python -m venv venv
 source venv/bin/activate   # Linux / MacOS
 venv\Scripts\activate      # Windows
 
-3️⃣ Instalar dependencias
+## 3️⃣ Instalar dependencias
 pip install -r requirements.txt
 
-4️⃣ Ejecutar el servidor
+## 4️⃣ Ejecutar el servidor
 flask run
 
-📎 Futuras Mejoras
+### 📎 Futuras Mejoras
 
-Dashboard para instructores y asesores
+Dashboard completo para instructores y asesores
 
-Notificaciones automáticas por vencimiento de documentos
+Notificaciones por vencimiento de documentos
 
 Integración con pasarelas de pago
 
-Módulo de reportes y estadísticas
+Módulo avanzado de reportes y estadísticas
 
 🤝 Contribuciones
 
 ¡Las contribuciones son bienvenidas!
-Si deseas colaborar, por favor realiza un fork y abre un pull request con tus mejoras.
-
+Realiza un fork, crea tu rama de mejoras y abre un pull request.
