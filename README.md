@@ -33,6 +33,8 @@ Permite controlar roles de usuario, gestionar inscripciones a cursos, registrar 
 | **Formularios**   | Flask-WTF *(con CSRF)*                 |
 | **Archivos**      | WTForms (manejo seguro)                |
 
+---
+
 
 
 ## 🎯 Objetivo del Sistema
@@ -58,6 +60,8 @@ Permite controlar roles de usuario, gestionar inscripciones a cursos, registrar 
 - Mantener historiales completos de estudiantes y saldos
 
   
+---
+
 
 # 🔐 Control de Acceso y Roles
 
@@ -85,6 +89,9 @@ Acceso a materiales académicos
 Registro de estudiantes
 
 Control de pagos e historial financiero
+
+---
+
 
 #### Seguridad implementada con:
 
@@ -169,4 +176,5 @@ Módulo avanzado de reportes y estadísticas
 
 ¡Las contribuciones son bienvenidas!
 Realiza un fork, crea tu rama de mejoras y abre un pull request.
+
 
