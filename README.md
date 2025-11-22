@@ -17,16 +17,23 @@ Permite controlar roles de usuario, gestionar inscripciones a cursos, registrar 
 
 ## 🧩 Facilidad de uso para administradores
 
+
+
+
 # 🛠️ Tecnologías Utilizadas
-Categoría	Tecnología
-Lenguaje	Python 3.x
-Framework Web	Flask (Jinja2 Templates)
-ORM	SQLAlchemy
-Frontend	HTML5 · CSS3 · Bootstrap · JS
-Base de Datos	SQLite (migrable a PostgreSQL/MySQL)
-Autenticación	Flask-Login
-Formularios	Flask-WTF (con CSRF)
-Archivos	WTForms (manejo seguro)
+
+| Categoría         | Tecnología                             |
+| ----------------- | -------------------------------------- |
+| **Lenguaje**      | Python 3.x                             |
+| **Framework Web** | Flask (Jinja2 Templates)               |
+| **ORM**           | SQLAlchemy                             |
+| **Frontend**      | HTML5 · CSS3 · Bootstrap · JS          |
+| **Base de Datos** | SQLite *(migrable a PostgreSQL/MySQL)* |
+| **Autenticación** | Flask-Login                            |
+| **Formularios**   | Flask-WTF *(con CSRF)*                 |
+| **Archivos**      | WTForms (manejo seguro)                |
+
+
 
 ## 🎯 Objetivo del Sistema
 
@@ -42,15 +49,18 @@ Archivos	WTForms (manejo seguro)
 
 ### Con CEA podrás:
 
-Digitalizar el proceso de matrícula y pagos
+- Digitalizar el proceso de matrícula y pagos
 
-Asignar roles como Instructor o Asesor
+- Asignar roles como Instructor o Asesor
 
-Gestionar documentos vehiculares (SOAT, RTM, licencias, etc.)
+- Gestionar documentos vehiculares (SOAT, RTM, licencias, etc.)
 
-Mantener historiales completos de estudiantes y saldos
+- Mantener historiales completos de estudiantes y saldos
+
+  
 
 # 🔐 Control de Acceso y Roles
+
 
 CEA implementa un sistema seguro basado en permisos:
 
@@ -119,13 +129,15 @@ Vista optimizada para dispositivos móviles
 
 Sistema modular basado en plantillas (base.html, componentes, bloques)
 
+---
+
 # 🧪 Instalación y Configuración
 1. **Clonar el repositorio**:
 bash
    git clone https://github.com/TxilorAlvarez/CEA/driving-school-platform.git
    cd driving-school-platform
-git clone https://github.com/TxilorAlvarez/CEA/driving-school-platform.git
-cd driving-school-platform
+   git clone https://github.com/TxilorAlvarez/CEA/driving-school-platform.git
+   cd driving-school-platform
 
 ## 2️⃣ Crear entorno virtual
 python -m venv venv
@@ -137,6 +149,11 @@ pip install -r requirements.txt
 
 ## 4️⃣ Ejecutar el servidor
 flask run
+
+
+
+---
+
 
 ### 📎 Futuras Mejoras
 
@@ -152,3 +169,4 @@ Módulo avanzado de reportes y estadísticas
 
 ¡Las contribuciones son bienvenidas!
 Realiza un fork, crea tu rama de mejoras y abre un pull request.
+
